@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/Upwork/apps/**)",
+      "Bash(npx create-next-app@latest portfolio-ai --typescript --tailwind --app --no-src-dir --no-import-alias --eslint --yes)",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)"
+    ]
+  }
+}
