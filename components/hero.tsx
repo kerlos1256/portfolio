@@ -104,7 +104,6 @@ export function Hero() {
               </svg>
               Get in Touch
             </a>
-            <button className="btn-ghost">View Work ↗</button>
           </div>
         </motion.div>
 
