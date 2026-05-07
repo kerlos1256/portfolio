@@ -541,4 +541,128 @@ body {
     border-radius: 20px;
     border: 0.5px solid var(--accent-border);
   }
+
+  /* Desktop bar handles input; hide textarea footer in drawer */
+  .chat-drawer-input {
+    display: none;
+  }
+
+  /* Hide FAB on desktop — desktop bar replaces it */
+  .chat-fab {
+    display: none;
+  }
+}
+
+/* ── Desktop always-visible input bar ── */
+.chat-desktop-bar {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 380px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg);
+  border: 0.5px solid var(--accent-border);
+  border-radius: 14px;
+  padding: 10px 10px 10px 14px;
+  box-shadow: 0 4px 28px rgba(42, 42, 37, 0.1);
+  z-index: 200;
+}
+
+.chat-desktop-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: var(--accent-dim);
+  border: 0.5px solid var(--accent-border);
+}
+
+.chat-desktop-input-field {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  color: var(--text);
+  font-family: inherit;
+  caret-color: var(--accent);
+  min-width: 0;
+}
+
+.chat-desktop-input-field::placeholder {
+  color: var(--muted);
+}
+
+.chat-desktop-input-field:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.chat-desktop-send {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: var(--accent);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: opacity 0.2s, transform 0.2s;
+  flex-shrink: 0;
+}
+
+.chat-desktop-send:hover:not(:disabled) {
+  transform: scale(1.05);
+}
+
+.chat-desktop-send:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+/* Hide desktop bar on mobile */
+@media (max-width: 640px) {
+  .chat-desktop-bar {
+    display: none;
+  }
+}
+
+/* ── Chat notification callout ── */
+.chat-notif {
+  position: fixed;
+  bottom: 90px;
+  right: 24px;
+  background: var(--surface);
+  border: 0.5px solid var(--accent-border);
+  border-radius: 12px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text);
+  z-index: 201;
+  box-shadow: 0 4px 20px rgba(42, 42, 37, 0.1);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.chat-notif::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  right: 26px;
+  width: 10px;
+  height: 10px;
+  background: var(--surface);
+  border-right: 0.5px solid var(--accent-border);
+  border-bottom: 0.5px solid var(--accent-border);
+  transform: rotate(45deg);
 }
