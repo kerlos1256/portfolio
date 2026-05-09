@@ -41,7 +41,7 @@ export function Portfolio() {
     <section id="work" style={{ paddingTop: 72, paddingBottom: 72 }}>
       <SectionWrapper>
         <div className="section-label">
-          <span className="section-label-text">Selected Work</span>
+          <span className="section-label-text">Things I&apos;ve Built</span>
           <span className="section-line" />
         </div>
         <div className="portfolio-grid">
