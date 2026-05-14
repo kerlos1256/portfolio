@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { SectionWrapper } from "./section-wrapper";
@@ -51,11 +52,14 @@ export function Portfolio() {
         </div>
       </SectionWrapper>
 
-      <AnimatePresence>
-        {selected && (
-          <ProjectModal project={selected} onClose={() => setSelected(null)} />
-        )}
-      </AnimatePresence>
+      {typeof document !== "undefined" && createPortal(
+        <AnimatePresence>
+          {selected && (
+            <ProjectModal project={selected} onClose={() => setSelected(null)} />
+          )}
+        </AnimatePresence>,
+        document.body
+      )}
     </section>
   );
 }
