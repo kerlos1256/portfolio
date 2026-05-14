@@ -1,0 +1,11 @@
+{
+  "title": "AI Chatbot Builder SaaS",
+  "description": "A multi-tenant SaaS platform for building and embedding AI-powered chat widgets.",
+  "details": "A full-stack SaaS platform where users create AI chat widgets trained on their own content — docs, FAQs, product pages — and embed them on any website with a single script tag. Built on Next.js 15 App Router with Prisma 7 on Neon Postgres, NextAuth v5 JWT sessions, and the Anthropic SDK for streaming responses. Includes per-bot rate limiting via Upstash Redis, a domain allowlist system to prevent unauthorized widget usage, and an optional OAuth gate clients can enable per bot for sensitive use cases. Billing tiers enforced at both API and UI layers.",
+  "impact": "Full SaaS",
+  "tags": ["Next.js 15", "TypeScript", "Prisma", "Anthropic SDK", "NextAuth", "Upstash Redis", "Resend", "Neon"],
+  "images": ["/chat-bot-builder-landing-page-desktop.png"],
+  "url": "https://getwren-one.vercel.app/",
+  "year": 2026,
+  "order": 1
+}
