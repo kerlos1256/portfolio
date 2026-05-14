@@ -7,8 +7,9 @@ const links = [
   { label: "Work", href: "#work" },
   { label: "Stack", href: "#stack" },
   { label: "Reviews", href: "#reviews" },
-  { label: "Contact", href: "#contact" },
 ];
+
+const UPWORK_URL = "https://www.upwork.com/freelancers/carlosworks?mp_source=share";
 
 export function Nav() {
   return (
@@ -35,13 +36,22 @@ export function Nav() {
         }}>
           K<span style={{ color: "var(--accent)" }}>.</span>G
         </div>
-        <ul className="nav-links">
+        <ul className="nav-links" style={{ position: "absolute", left: "50%", transform: "translateX(-50%)" }}>
           {links.map((link) => (
             <li key={link.href}>
               <a href={link.href}>{link.label}</a>
             </li>
           ))}
         </ul>
+        <a
+          href={UPWORK_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-primary"
+          style={{ fontSize: 13 }}
+        >
+          Hire me on Upwork
+        </a>
       </div>
     </motion.nav>
   );
