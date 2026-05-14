@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 const links = [
   { label: "About", href: "#about" },
+  { label: "Work", href: "#work" },
   { label: "Stack", href: "#stack" },
   { label: "Reviews", href: "#reviews" },
   { label: "Contact", href: "#contact" },
@@ -18,7 +19,7 @@ export function Nav() {
       style={{
         position: "sticky",
         top: 0,
-        zIndex: 50,
+        zIndex: 40,
         borderBottom: "0.5px solid var(--border)",
         background: "rgba(247,244,238,0.88)",
         backdropFilter: "blur(16px)",

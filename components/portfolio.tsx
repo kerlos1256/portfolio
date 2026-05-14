@@ -217,6 +217,7 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
         alignItems: "center",
         justifyContent: "center",
         padding: "24px 20px",
+        paddingTop: "calc(57px + 24px)",
       }}
     >
       <motion.div
