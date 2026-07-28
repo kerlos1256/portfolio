@@ -1,0 +1,17 @@
+{
+  "title": "Flowcraft — Durable Workflow Automation",
+  "description": "A no-code SaaS for building workflows visually and running them durably in the background.",
+  "details": "A full-stack no-code SaaS where users drag nodes onto a canvas to build automation workflows that run durably — surviving crashes, automatically retrying flaky steps, and sleeping through multi-hour delays without holding a server open. Built on Next.js 14 App Router with a React Flow visual editor and Inngest for durable, replay-safe execution: workflows are modeled as graphs and walked as durable steps, with idempotent per-step writes, retry-aware actions, and conditional branching that skips untaken paths. Includes multi-tenant email/password auth (jose + bcrypt) with per-user isolation, a personalized onboarding flow, a 3-tier Stripe subscription with server-enforced usage limits, and embeddable widget triggers — a single script tag you paste into any site (WordPress, Shopify, anything) that renders a Shadow-DOM form/button/chat widget and fires a workflow on submit, protected by honeypots, rate limiting, and a domain allowlist. Deployed entirely serverless on Vercel + Neon Postgres at zero hosting cost.",
+  "impact": "Durable SaaS",
+  "tags": ["Next.js 14", "TypeScript", "React Flow", "Inngest", "Prisma", "Stripe", "Neon"],
+  "images": [
+    "/projects/flowcraft-canvas.png",
+    "/projects/flowcraft-run-history.png",
+    "/projects/flowcraft-landing.png",
+    "/projects/flowcraft-widgets.png"
+  ],
+  "url": "https://flowcraft-silk.vercel.app",
+  "github": "https://github.com/kerlos1256/flowcraft",
+  "year": 2026,
+  "order": 0
+}
